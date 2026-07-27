@@ -380,12 +380,6 @@ img {
     }
 }
 
-@media (max-width:748px) {
-    .secSection p span {
-        font-size: 0.9em;
-    }
-}
-
 @media (max-width:718px) {
 
     .ourLogo,
@@ -436,14 +430,16 @@ img {
     }
 
     .footerLogo {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 0.5em;
     }
 
     .connect {
-        width: 100%;
-        justify-content: center;
+        width: 40%;
+        justify-content:space-evenly;
+
         gap: 0.6em;
     }
 
@@ -602,7 +598,9 @@ img {
     .project a h4 {
         font-size: 0.75em;
     }
-
+    .project a p{
+        font-size:1em;
+    }
     .sloganSection h3 {
         font-size: 14px;
     }
@@ -612,20 +610,21 @@ img {
     }
 
     .footerLogo {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 0.4em;
     }
 
     .connect {
-        width: 100%;
-        justify-content: center;
+        width: 40%;
+        justify-content: space-evenly;
     }
 }
 
 @media (max-width:377px) {
     .ourLogo, .secLogo {
-        width: 20%;   /* logo takes more space on tiny screens */
+        width: 30%;   /* logo takes more space on tiny screens */
         height: auto;
     }
 
@@ -659,7 +658,9 @@ img {
     .project a h4 {
         font-size: 0.7em;
     }
-
+    .project a p{
+        font-size:0.8em;
+    }
     .sloganSection h3 {
         font-size: 12px;
     }
@@ -669,14 +670,15 @@ img {
     }
 
     .footerLogo {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 0.3em;
     }
 
     .connect {
-        width: 100%;
-        justify-content: center;
+        width: 40%;
+        justify-content: space-evenly;
         gap: 0.4em;
     }
 
@@ -724,7 +726,9 @@ img {
     .project a h4 {
         font-size: 0.65em;
     }
-
+    .project a p{
+        font-size:0.6em;
+    }
     .sloganSection h3 {
         font-size: 10px;
     }
@@ -734,14 +738,15 @@ img {
     }
 
     .footerLogo {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 0.2em;
     }
 
     .connect {
-        width: 100%;
-        justify-content: center;
+        width:40%;
+        justify-content: space-evenly;
         gap: 0.2em;
     }
 
