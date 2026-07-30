@@ -438,7 +438,7 @@ img {
 
     .connect {
         width: 40%;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
 
         gap: 0.6em;
     }
@@ -512,9 +512,11 @@ img {
     .secSection {
         margin-bottom: 1em;
     }
+
     .secSection p span {
         font-size: 1.5em;
     }
+
     .sloganSection h3 {
         font-size: 16px;
     }
@@ -557,12 +559,20 @@ img {
     }
 }
 
-@media (max-width:451px) {
+@media (max-width:452px) {
+    body {
+        background-color: black;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
 
     .ourLogo,
     .secLogo {
         width: 20%;
-        /* logo takes half the screen */
         height: auto;
     }
 
@@ -580,7 +590,7 @@ img {
     }
 
     .secSection p {
-        font-size: 12px;
+        /* font-size: 12px; */
         line-height: 1.4em;
     }
 
@@ -590,17 +600,20 @@ img {
 
     .mainGrid,
     .secMainGrid {
-        grid-template-columns: 1fr;
-        /* stack vertically */
-        gap: 6px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        margin-bottom: 1em;
     }
 
     .project a h4 {
         font-size: 0.75em;
     }
-    .project a p{
-        font-size:1em;
+
+    .project a p {
+        font-size: 1em;
     }
+
     .sloganSection h3 {
         font-size: 14px;
     }
@@ -620,141 +633,96 @@ img {
         width: 40%;
         justify-content: space-evenly;
     }
-}
 
-@media (max-width:377px) {
-    .ourLogo, .secLogo {
-        width: 30%;   /* logo takes more space on tiny screens */
-        height: auto;
-    }
-
-    .heading {
-        font-size: 0.85em;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 0.7em;
-    }
-
-    .secSection {
-        width: 100%;
-    }
-
-    .secSection p {
-        font-size: 14px;
-        line-height: 1.4em;
-    }
-
-    .secSection p span {
-        font-size: 1.2em;
-    }
-
-    .mainGrid, .secMainGrid {
-        grid-template-columns: 1fr; /* stack vertically */
-        gap: 5px;
-    }
-
-    .project a h4 {
-        font-size: 0.7em;
-    }
-    .project a p{
-        font-size:0.8em;
-    }
-    .sloganSection h3 {
-        font-size: 12px;
-    }
-
-    .sloganSection h4 {
-        font-size: 10px;
-    }
-
-    .footerLogo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.3em;
-    }
-
-    .connect {
-        width: 40%;
-        justify-content: space-evenly;
-        gap: 0.4em;
-    }
-
-    .connectLogo {
-        width: 0.7em;
-    }
-
-    .allRights {
+    .allRights h6 {
         font-size: 8px;
     }
 }
-@media (max-width:320px) {
-    .ourLogo, .secLogo {
-        width: 30%;
-        height: auto;
-    }
 
-    .heading {
-        font-size: 0.8em;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 0.65em;
+@media (max-width:426px) {
+    main {
+        width: 100%;
+        height: 100%;
     }
 
     .secSection {
-        width: 100%;
+        margin-bottom: 0.8em;
     }
 
     .secSection p {
-        font-size: 9px;
+        line-height: 1.2em;
+    }
+
+    .ourLogo,
+    .secLogo {
+        width: 23%;
+        height: auto;
+    }
+
+    .secSection p {
+        font-size:14px;
         line-height: 1.2em;
     }
 
     .secSection p span {
-        font-size: 1em;
-    }
-
-    .mainGrid, .secMainGrid {
-        grid-template-columns: 1fr;
-        gap: 4px;
-    }
-
-    .project a h4 {
-        font-size: 0.65em;
-    }
-    .project a p{
-        font-size:0.6em;
-    }
-    .sloganSection h3 {
-        font-size: 10px;
-    }
-
-    .sloganSection h4 {
-        font-size: 8px;
-    }
-
-    .footerLogo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.2em;
-    }
-
-    .connect {
-        width:40%;
-        justify-content: space-evenly;
-        gap: 0.2em;
-    }
-
-    .connectLogo {
-        width: 0.6em;
+        font-size:18px;
     }
 
     .allRights {
-        font-size: 7px;
+        font-size: 8px;
+        padding: 0px;
+    }
+
+    h6 {
+        margin: 0px;
+    }
+}
+
+
+@media (max-width:377px) {
+    main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ourLogo,
+    .secLogo {
+        width: 23%;
+        height: auto;
+    }
+
+    .sloganSection h3 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:369px) {
+    .ourLogo,
+    .secLogo {
+        width: 24%;
+        height: auto;
+    }
+    .project a h4 {
+        font-size: 0.70em;
+    }
+
+    .project a p {
+        font-size: 0.9em;
+    }
+    .secSection p {
+        font-size:14px;
+    }
+
+    .secSection p span {
+        font-size:17px;
+    }
+}
+@media (max-width:352px) {
+    .mainGrid,
+    .secMainGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 20px;
+        margin-bottom: 1em;
     }
 }
