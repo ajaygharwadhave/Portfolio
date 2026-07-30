@@ -726,3 +726,26 @@ img {
         margin-bottom: 1em;
     }
 }
+@media (max-width:333px) {
+    .img{
+        padding-right:5px;
+    }
+    
+    .item h4{
+        font-size:14px;
+    }
+}
+@media (max-width:327px) {
+    .sloganSection h3 {
+        font-size: 11px;
+    }
+}
+@media (max-width:321px) {
+    .item h4{
+        font-size:13px;
+    }
+
+    .project a h4{
+        font-size:0.65em;
+    }
+}
